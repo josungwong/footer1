@@ -1,0 +1,129 @@
+footer .footer-box{
+    background-color: #e6e6e6; 
+    display: flex;
+    justify-content: space-around;
+}
+footer .first-line{
+    width: 55vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+footer .first-line span p{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 20px;
+}
+footer .first-line span a{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    margin: 20px;
+}
+footer .first-line span a:hover{
+    text-decoration: underline;
+}
+footer .second-line p{
+    font-size: 12px;
+    background-color: #b7b7b7;
+    text-align: center;
+    margin: 10px 0;
+    padding: 0;
+    font-weight: normal;
+}
+footer .second-line .footer-button{
+    border: none;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    width: 250px;
+    height: 40px;
+}
+footer .second-line .footer-button:hover{
+    background-color: rgb(66, 66, 66);
+}
+footer .second-line div{
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+footer .second-line .footer-icon{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+footer .second-line i{
+    background-color: #000000;
+    transform: scale(1.3);
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 25px;
+}
+footer .footer-underline, footer .footer-underline a{
+    color: #000000;
+    font-size: 12px;
+    margin: 20px;
+    text-decoration: none;
+}
+footer .footer-underline a{
+    margin: 0;
+}
+footer .footer-underline span{
+    margin: 0 20px;
+}
+footer .footer-underline a:hover{
+    text-decoration: underline;
+}
+footer .first-line span .unuse{
+    display: none;
+}
+@media screen and (min-width:640px) and (max-width:1024px) {
+    footer .footer-box{
+        flex-direction: column;
+    }
+    footer .second-line p{
+        width: 250px;
+        background-color: #e6e6e6;
+    }
+    footer .second-line{
+        width: 70vw;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+    }
+    footer .second-line .FU{
+        position: relative;
+        top: -20px;
+    }
+}
+@media screen and (max-width:640px) {
+    .noneed{
+        display: none;
+    }
+    footer .first-line span .noneed{
+        display: none;
+    }
+    footer .first-line span .unuse{
+        display: inline;
+    }
+    footer .footer-box{
+        flex-direction: column;
+        align-items: center;
+        height: 30vh;
+    }
+    footer .footer-link{
+        text-align: center;
+        margin: 1em 0;
+    }
+    footer .first-line .move-R{
+        position: relative;
+        left: 70px;
+    }
+    footer .first-line .move-R2{
+        position: relative;
+        left: 40px;
+    }
+}
